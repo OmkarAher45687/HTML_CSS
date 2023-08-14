@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment_form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <header>
+            <h1 class="main">PAYMENT FORM</h1>
+        </header>
+        <h2>User Information</h2>
+
+        <p>First Name: * <input type="text" name="name" required placeholder="Omkar"></p>
+        <p>Last Name: * <input type="text" name="name" required placeholder="Aher"></p>
+        <p>
+            <fieldset>
+                <legend>Gender * </legend>
+                    Male <input type="radio" name="gender" id="male" required>
+                    Female <input type="radio" name="gender" id="female" required>
+            </fieldset>
+        </p>
+    <p>
+        Address: <textarea name="address" id="add" cols="100" rows="5" placeholder="Enter your Address"></textarea>
+    </p>
+    <p>Email: * <input type="email" id="email" required placeholder="aher45687@gmail.com"></p>
+    <p>Pincode: * <input type="number" name="pin" id="pin" required placeholder="422 502"></p>
+    <hr>
+    <h2>Payment Gateway</h2>
+    <fieldset>
+        <p>Card Type: *
+            <select name="card_type" id="card" required>
+                    <option value=""> --SELECT CARD TYPE--</option>
+                    <option value="visa"> VISA</option>
+                    <option value="Rupay"> RUPAY</option>
+                    <option value="Mastercard"> MASTERCARD</option>
+            </select>
+            
+        </p>
+        <P>
+            Card no. * <input type="number" name="card no" id="no" required placeholder="1111-2222-3333-4444">
+        </P>
+        <p>
+            Expiration Date: *<input type="date" name="exp_date" id="exp" required>
+        </p>
+        <p>CVV: * <input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+        <h3><input type="submit" value="PAY NOW"></h3>
+    </fieldset>
+   
+</form>
+</div>
+</body>
+</html>
